@@ -1,0 +1,114 @@
+[
+    {
+        "id": "1",
+        "nombre": "macetas ",
+        "categoria": "macetas",
+        "precio": "400",
+        "descripcion": "macetas ideal para suculenta",
+        "img": "../images/productos/maceta1.jpg"
+    },
+    {
+        "id": "2",
+        "nombre": "macetas ",
+        "categoria": "macetas",
+        "precio": "400",
+        "descripcion": "macetas ideal para suculenta",
+        "img": "../images/productos/maceta2.jpg"
+    },
+    {
+        "id": "3",
+        "nombre": "macetas ",
+        "categoria": "macetas",
+        "precio": "400",
+        "descripcion": "macetas ideal para suculenta",
+        "img": "../images/productos/maceta3.jpg"
+    },
+    {
+        "id": "4",
+        "nombre": "macetas ",
+        "categoria": "macetas",
+        "precio": "400",
+        "descripcion": "macetas ideal para suculenta",
+        "img": "../images/productos/maceta4.jpg"
+    },
+    {
+        "id": "5",
+        "nombre": "macetas ",
+        "categoria": "macetas",
+        "precio": "400",
+        "descripcion": "macetas ideal para suculenta",
+        "img": "../images/productos/maceta5.jpg"
+    },
+    {
+        "id": "6",
+        "nombre": "Honguitos",
+        "categoria": "adornos",
+        "precio": "800",
+        "descripcion": "Adorno para el jardin de tu casa",
+        "img": "../images/productos/adorno1.jpg"
+    },
+    {
+        "id": "7",
+        "nombre": "Lampara China",
+        "categoria": "adornos",
+        "precio": "800",
+        "descripcion": "Adorno para el jardin de tu casa",
+        "img": "../images/productos/adorno2.jpg"
+    },
+    {
+        "id": "8",
+        "nombre": "Patito",
+        "categoria": "adornos",
+        "precio": "800",
+        "descripcion": "Adorno para el jardin de tu casa",
+        "img": "../images/productos/adorno3.jpg"
+    },
+    {
+        "id": "9",
+        "nombre": "Gallina",
+        "categoria": "adornos",
+        "precio": "800",
+        "descripcion": "Adorno para el jardin de tu casa",
+        "img": "../images/productos/adorno4.jpg"
+    },
+    {
+        "id": "10",
+        "nombre": "Honguito",
+        "categoria": "adornos",
+        "precio": "800",
+        "descripcion": "Adorno para el jardin de tu casa",
+        "img": "../images/productos/adorno5.jpg"
+    },
+    {
+        "id": "11",
+        "nombre": "Fuente con Buda",
+        "categoria": "fuentes",
+        "precio": "1200",
+        "descripcion": "Fuentes de agua",
+        "img": "../images/productos/fuente1.jpg"
+    },
+    {
+        "id": "12",
+        "nombre": "Fuente Cascada",
+        "categoria": "fuentes",
+        "precio": "1200",
+        "descripcion": "Fuentes de agua",
+        "img": "../images/productos/fuente2.jpg"
+    },
+    {
+        "id": "13",
+        "nombre": "Bebedero de Pajaros",
+        "categoria": "fuentes",
+        "precio": "1200",
+        "descripcion": "Fuentes de agua",
+        "img": "../images/productos/fuente3.jpg"
+    },
+    {
+        "id": "14",
+        "nombre": "Fuente grande",
+        "categoria": "fuentes",
+        "precio": "1200",
+        "descripcion": "Fuentes de agua",
+        "img": "../images/productos/fuente4.jpg"
+    }
+]   

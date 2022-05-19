@@ -17,4 +17,10 @@
     color: rgb(0, 0, 0);
 }
 
-
+#contenedor-productos {
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
