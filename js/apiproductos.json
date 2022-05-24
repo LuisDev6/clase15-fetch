@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "nombre": "macetas ",
+        "nombre": "Macetas",
         "categoria": "macetas",
         "precio": "400",
         "descripcion": "macetas ideal para suculenta",
@@ -9,7 +9,7 @@
     },
     {
         "id": "2",
-        "nombre": "macetas ",
+        "nombre": "Macetas",
         "categoria": "macetas",
         "precio": "400",
         "descripcion": "macetas ideal para suculenta",
@@ -17,7 +17,7 @@
     },
     {
         "id": "3",
-        "nombre": "macetas ",
+        "nombre": "Macetas",
         "categoria": "macetas",
         "precio": "400",
         "descripcion": "macetas ideal para suculenta",
@@ -25,7 +25,7 @@
     },
     {
         "id": "4",
-        "nombre": "macetas ",
+        "nombre": "Macetas",
         "categoria": "macetas",
         "precio": "400",
         "descripcion": "macetas ideal para suculenta",
@@ -33,7 +33,7 @@
     },
     {
         "id": "5",
-        "nombre": "macetas ",
+        "nombre": "Macetas",
         "categoria": "macetas",
         "precio": "400",
         "descripcion": "macetas ideal para suculenta",
@@ -49,7 +49,7 @@
     },
     {
         "id": "7",
-        "nombre": "Lampara China",
+        "nombre": "Lampara",
         "categoria": "adornos",
         "precio": "800",
         "descripcion": "Adorno para el jardin de tu casa",
