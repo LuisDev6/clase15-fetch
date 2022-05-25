@@ -14,7 +14,7 @@
 
 
 <body class="body">
-    <header class="header header fixed-top">
+    <header class="header fixed-top">
 
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -48,54 +48,59 @@
         </nav>
 
     </header>
-    <main class="">
-        <div></div>
-        <h1 class="h1main mb-4">Inicio</h1>
+    <main class="container">
+        <div>
+            <h1 class="h1main mb-4">Inicio</h1>
         </div>
 
-        <div class="container row flex-wrap justify-content-center">
-
-            <div class="col-lg-6 col-sm-12 ms-4">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 col-sm-12 bienvenido">
                 <h2>Bienvenidos a MyO Artesanal</h2>
-
                 <p>
-                    Myo es un emprendimiento famliar en el cual realiazamos a mano y con amor cada uno de los productos que ofrecemos.
+                    Myo es un emprendimiento famliar en el cual realiazamos a mano y con amor cada uno de los productos
+                    que ofrecemos.
                     Tenemos para ofrecerte:
-                    <ul>
-                        <li>Macetas</li>
-                        <li>Adornos para tu jardín </li>
-                        <li>Fuentes de agua con luces</li>
-                        <li>Bebederos de aves</li>
-                        <li>Lamparas japonesas</li>
-                    </ul>
+                <ul>
+                    <li>Macetas</li>
+                    <li>Adornos para tu jardín </li>
+                    <li>Fuentes de agua con luces</li>
+                    <li>Bebederos de aves</li>
+                    <li>Lamparas japonesas</li>
+                </ul>
                 </p>
             </div>
 
             <div class="col-lg-6 col-sm-12">
-                <div class="carrousel">
-                    <h3>Algunos de nuestros productos</h3>
-                    
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/images/productos/adorno1.jpg" class="d-block w-50" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/images/productos/fuente1.jpg" class="d-block w-50" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/images/productos/maceta1.jpg" class="d-block w-50" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/images/productos/maceta2.jpg" class="d-block w-50" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/images/productos/adorno3.jpg" class="d-block w-50" alt="...">
+                <aside class="aside">
+                    <div class="carrousel">
+                        <h3 class="h3aside">Algunos de nuestros productos</h3>
+
+                        <div id="carouselExampleSlidesOnly" class="carousel slide justify-content-center"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/images/productos/adorno1.jpg" class="d-block w-50 img-slider" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/productos/fuente1.jpg" class="d-block w-50 img-slider" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/productos/maceta1.jpg" class="d-block w-50 img-slider" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/productos/maceta2.jpg" class="d-block w-50 img-slider" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/productos/adorno3.jpg" class="d-block w-50 img-slider" alt="...">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </aside>
             </div>
+        </div>
+
+
         </div>
 
     </main>
@@ -106,6 +111,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
+    <footer class="footer fixed-bottom">
+        <p class="pfooter">Seguinos en Instagram: <a href="https://www.facebook.com/MyO-Artesanal-106869937729445"
+                target="_blank">
+                <img src="/images/instagram.webp" alt="logo instagram" width="20" height="20"></a></p>
+    </footer>
 </body>
 
 </html>

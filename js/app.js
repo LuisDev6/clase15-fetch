@@ -39,7 +39,7 @@ selecCategoria.addEventListener('change', () => {
 
 
 
-//logica de la APP
+//LOGICA DE LA APP
 
 async function cargaProductos() {
 
@@ -50,6 +50,7 @@ async function cargaProductos() {
     mostrarProductos(stockProductos);
 }
 
+//MOSTRAR PRUDUCTOS EN PANTALLA
 function mostrarProductos(array) {
 
     contenedorProductos.innerHTML = "";
@@ -87,7 +88,7 @@ function mostrarProductos(array) {
 
 
 
-
+//FUNCION QUE AGREGA LOS PRODUCTOS AL CARRITO
 function agregarAlCarrito(id) {
     let existe = carritoDeCompras.find(item => item.id == id)
     if (existe) {
@@ -110,13 +111,14 @@ function agregarAlCarrito(id) {
 
 }
 
+//FUNCION QUE AGREGA Y PINTA CON LOS PRODUCTOS EL MODAL
 function mostrarCarrito(agregarProducto) {
     let div = document.createElement('div')
     div.className = 'productoEnCarrito'
     div.innerHTML = `
                     <p>${agregarProducto.nombre}</p>
                     <p>Precio:$${agregarProducto.precio}</p>
-                    <p id="und${agregarProducto.id}">Cant: ${agregarProducto.cantidad}</p>
+                    <p id="und${agregarProducto.id}">Und: ${agregarProducto.cantidad}</p>
                     <button id="eliminar${agregarProducto.id}" class="boton-eliminar"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                     <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
                     <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
@@ -145,12 +147,14 @@ function mostrarCarrito(agregarProducto) {
 
 }
 
+//FUNCION QUE ACTUALIZA EL CARRITO CON RESPECTO A CANTIDADES DE PRUDUCTOS REPETIDOS
 function actualizarCarrito() {
     contadorCarrito.innerText = carritoDeCompras.reduce((acc, el) => acc + el.cantidad, 0)
     precioTotal.innerText = carritoDeCompras.reduce((acc, el) => acc + (el.precio * el.cantidad), 0)
 
 }
 
+//FUNCION QUE RECUPERA Y ACTUALIZA EL CARRITO EN EL LOCALSTORAGE
 function recuperarCarrito() {
     let recuperarLS = JSON.parse(localStorage.getItem('carrito'))
 
@@ -164,6 +168,29 @@ function recuperarCarrito() {
 
 
 }
+
+const contenedorTarjetaModal = document.querySelector('#terminar');
+const mostraTarjeta = document.querySelector('.pago-tarjeta');
+const finalizarCompra = document.querySelector('.modal_close');
+const borrarCarrito = document.getElementById('carrito-contenedor')
+
+//SIMULACION DE PAGO CON TARJETA
+contenedorTarjetaModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    mostraTarjeta.classList.add('modal--show');
+});
+
+//FIN DE LA COMPRA DONDE SE BORRA EL CARRITO DEL LOCALSTORAGE Y CARRITO DE COMPRAS QUE SE MUESTRA EN EL MODAL
+finalizarCompra.addEventListener('click', (e) => {
+    e.preventDefault();
+    contenedorModal.classList.toggle('modal-active')
+    mostraTarjeta.classList.remove('modal--show');
+    localStorage.removeItem('carrito');
+    agregarProducto = [];
+    borrarCarrito.innerText = "";
+    contadorCarrito.innerText = 0;
+    precioTotal.innerText = "";
+});
 
 //MUESTRO PRODUCTOS 
 mostrarProductos(stockProductos);
